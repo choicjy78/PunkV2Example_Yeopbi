@@ -8,11 +8,19 @@
 import Foundation
 import SwiftyJSON
 
+enum Unit {
+    case liters
+    case celsius
+    case kilograms
+    case grams
+    case etc
+}
+
 struct Beer {
-    var id: String
+    var id: Int
     var name: String
-    var hashtags: [String]
-    var firstBrewed: String
+    var tagline: String
+    var firstBrewed: BeerBrewedDate
     var description: String
     var imageURL: String
     var abv: Float
@@ -34,13 +42,13 @@ struct Beer {
     init(data: JSON) {
         let foodPairingArray = data["food_pairing"].arrayValue
         
-        self.id = data["id"].stringValue
+        self.id = data["id"].intValue
         self.name = data["name"].stringValue
-        self.hashtags = data["tagline"].stringValue.components(separatedBy: ".")
-        self.firstBrewed = data["first_brewed"].stringValue
+        self.tagline = data["tagline"].stringValue
+        self.firstBrewed = BeerBrewedDate(data: data["first_brewed"].stringValue)
         self.description = data["description"].stringValue
         self.imageURL = data["image_url"].stringValue
-        self.abv = data["adv"].floatValue
+        self.abv = data["abv"].floatValue
         self.ibu = data["ibu"].floatValue
         self.targetFG = data["target_fg"].floatValue
         self.targetOG = data["target_og"].floatValue
@@ -67,7 +75,7 @@ struct BeerMethod {
         let mashTempArray = data["mash_temp"].arrayValue
         
         self.mashTemp = mashTempArray.map { BeerMeshTemp(data: $0) }
-        self.fermentationTemp = BeerValueUnit(data: data["fermentation"])
+        self.fermentationTemp = BeerValueUnit(data: data["fermentation"]["temp"])
         self.twist = data["twist"].stringValue
     }
 }
@@ -98,12 +106,24 @@ struct BeerMeshTemp {
 }
 
 struct BeerValueUnit {
-    var value: Int
-    var unit: String
+    var value: Float
+    var unit: Unit
     
     init(data: JSON) {
-        self.value = data["value"].intValue
-        self.unit = data["unit"].stringValue
+        self.value = data["value"].floatValue
+
+        switch data["unit"].stringValue {
+        case "liters":
+            self.unit = .liters
+        case "celsius":
+            self.unit = .celsius
+        case "kilograms":
+            self.unit = .kilograms
+        case "grams":
+            self.unit = .grams
+        default:
+            self.unit = .etc
+        }
     }
 }
 
@@ -128,5 +148,22 @@ struct BeerHops {
         self.amount = BeerValueUnit(data: data["amount"])
         self.add = data["add"].stringValue
         self.attribute = data["attribute"].stringValue
+    }
+}
+
+struct BeerBrewedDate {
+    var year: String
+    var month: String
+    
+    init(data: String) {
+        let seperatedBySlash = data.components(separatedBy: "/")
+        
+        if seperatedBySlash.count == 2 {
+            self.month = seperatedBySlash[0]
+            self.year = seperatedBySlash[1]
+        } else {
+            self.year = ""
+            self.month = ""
+        }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27DB1D4D21DC4C3400232C2F /* PunkV2TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB1D4C21DC4C3400232C2F /* PunkV2TestData.swift */; };
 		27EAD1E121D5C62100259A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1E021D5C62100259A76 /* AppDelegate.swift */; };
 		27EAD1E321D5C62100259A76 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1E221D5C62100259A76 /* MainViewController.swift */; };
 		27EAD1E621D5C62100259A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EAD1E421D5C62100259A76 /* Main.storyboard */; };
@@ -14,7 +15,8 @@
 		27EAD1EB21D5C62900259A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EAD1E921D5C62900259A76 /* LaunchScreen.storyboard */; };
 		27EAD1F521D5CFEB00259A76 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1F421D5CFEB00259A76 /* Constant.swift */; };
 		27EAD1F721D5D09800259A76 /* PunkV2Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1F621D5D09800259A76 /* PunkV2Data.swift */; };
-		27EAD1FF21D6045500259A76 /* PunkV2_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1FE21D6045500259A76 /* PunkV2_ExampleTests.swift */; };
+		27EAD1FF21D6045500259A76 /* PunkV2DataUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAD1FE21D6045500259A76 /* PunkV2DataUnitTest.swift */; };
+		48BD6780866B0F6BA9EAC39D /* Pods_PunkV2_Example_PunkV2_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280FB92DDEB965FF230B9DC5 /* Pods_PunkV2_Example_PunkV2_ExampleTests.framework */; };
 		D0D6C721EBCBB9F5624CFC5A /* Pods_PunkV2_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1C0F60E63FE5BC67BD95BA /* Pods_PunkV2_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1AE44305AB3E958FD910DDF2 /* Pods-PunkV2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkV2_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PunkV2_Example/Pods-PunkV2_Example.release.xcconfig"; sourceTree = "<group>"; };
+		27DB1D4C21DC4C3400232C2F /* PunkV2TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkV2TestData.swift; sourceTree = "<group>"; };
 		27EAD1DD21D5C62100259A76 /* PunkV2_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkV2_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EAD1E021D5C62100259A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27EAD1E221D5C62100259A76 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +43,11 @@
 		27EAD1F421D5CFEB00259A76 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		27EAD1F621D5D09800259A76 /* PunkV2Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkV2Data.swift; sourceTree = "<group>"; };
 		27EAD1FC21D6045500259A76 /* PunkV2_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkV2_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27EAD1FE21D6045500259A76 /* PunkV2_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkV2_ExampleTests.swift; sourceTree = "<group>"; };
+		27EAD1FE21D6045500259A76 /* PunkV2DataUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkV2DataUnitTest.swift; sourceTree = "<group>"; };
 		27EAD20021D6045500259A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280FB92DDEB965FF230B9DC5 /* Pods_PunkV2_Example_PunkV2_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkV2_Example_PunkV2_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6EF829B8E6A5B02080D777 /* Pods-PunkV2_Example-PunkV2_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkV2_Example-PunkV2_ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkV2_Example-PunkV2_ExampleTests/Pods-PunkV2_Example-PunkV2_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C54D76AA1DEEF27C48729441 /* Pods-PunkV2_Example-PunkV2_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkV2_Example-PunkV2_ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PunkV2_Example-PunkV2_ExampleTests/Pods-PunkV2_Example-PunkV2_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF1C0F60E63FE5BC67BD95BA /* Pods_PunkV2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkV2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC565AC64C38E091E966B358 /* Pods-PunkV2_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkV2_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkV2_Example/Pods-PunkV2_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BD6780866B0F6BA9EAC39D /* Pods_PunkV2_Example_PunkV2_ExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +110,8 @@
 		27EAD1FD21D6045500259A76 /* PunkV2_ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				27EAD1FE21D6045500259A76 /* PunkV2_ExampleTests.swift */,
+				27DB1D4C21DC4C3400232C2F /* PunkV2TestData.swift */,
+				27EAD1FE21D6045500259A76 /* PunkV2DataUnitTest.swift */,
 				27EAD20021D6045500259A76 /* Info.plist */,
 			);
 			path = PunkV2_ExampleTests;
@@ -113,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				DF1C0F60E63FE5BC67BD95BA /* Pods_PunkV2_Example.framework */,
+				280FB92DDEB965FF230B9DC5 /* Pods_PunkV2_Example_PunkV2_ExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 			children = (
 				FC565AC64C38E091E966B358 /* Pods-PunkV2_Example.debug.xcconfig */,
 				1AE44305AB3E958FD910DDF2 /* Pods-PunkV2_Example.release.xcconfig */,
+				4F6EF829B8E6A5B02080D777 /* Pods-PunkV2_Example-PunkV2_ExampleTests.debug.xcconfig */,
+				C54D76AA1DEEF27C48729441 /* Pods-PunkV2_Example-PunkV2_ExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27EAD20521D6045500259A76 /* Build configuration list for PBXNativeTarget "PunkV2_ExampleTests" */;
 			buildPhases = (
+				45AB768339560A7EF4DD5C04 /* [CP] Check Pods Manifest.lock */,
 				27EAD1F821D6045500259A76 /* Sources */,
 				27EAD1F921D6045500259A76 /* Frameworks */,
 				27EAD1FA21D6045500259A76 /* Resources */,
+				6F19423FCDE67EC29E2D2EB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +237,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45AB768339560A7EF4DD5C04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunkV2_Example-PunkV2_ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F19423FCDE67EC29E2D2EB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PunkV2_Example-PunkV2_ExampleTests/Pods-PunkV2_Example-PunkV2_ExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PunkV2_Example-PunkV2_ExampleTests/Pods-PunkV2_Example-PunkV2_ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA06245E090E7CFC16DF04ED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,7 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EAD1FF21D6045500259A76 /* PunkV2_ExampleTests.swift in Sources */,
+				27EAD1FF21D6045500259A76 /* PunkV2DataUnitTest.swift in Sources */,
+				27DB1D4D21DC4C3400232C2F /* PunkV2TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +526,7 @@
 		};
 		27EAD20321D6045500259A76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6EF829B8E6A5B02080D777 /* Pods-PunkV2_Example-PunkV2_ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +547,7 @@
 		};
 		27EAD20421D6045500259A76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54D76AA1DEEF27C48729441 /* Pods-PunkV2_Example-PunkV2_ExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
